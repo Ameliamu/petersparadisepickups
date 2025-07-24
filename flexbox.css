@@ -1,0 +1,232 @@
+.flex
+{ 
+    background-color: rgb(41, 41, 46);
+    display: flex;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    height: 60px;
+    justify-content: space-between;
+    color: aliceblue;
+    padding-left: 40px;
+    padding-right: 40px;
+    
+    z-index: 1;
+}
+
+.flex2
+{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    
+    position: absolute;
+    top: 60px;
+    right: 0;
+    left: 0;
+}
+
+.flex3 
+{
+    
+    background-color: none;
+    background-image: url(master\ \(2\)1.jpeg);
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    
+    
+    
+    
+        
+    
+}
+
+
+
+.flex4{
+
+    
+    display: grid;
+    grid-template-columns: 600px 600px 1fr;
+    height: 500px;
+    background-color: rgb(71, 102, 0);
+    
+        
+    
+}
+
+.flex5 {
+
+   
+    background-color: rgb(104, 2, 151);
+   
+}
+
+.master 
+{
+    object-fit: cover;
+}
+
+.View
+{
+    font-family: Arial, Helvetica, sans-serif;
+    border-width: 4px;
+    border-style: solid;
+    border-radius: 6px;
+    background-color: rgb(136, 0, 0);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+
+.View:hover
+{
+    
+    background-color: rgb(170, 1, 1);
+    
+}
+
+.View:active
+{
+    
+    opacity: 0.6;
+}
+
+.para-4
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    margin-left: 50px;
+    font-weight: bold;
+}
+
+.para-5
+{
+    font-family: Arial, Helvetica, sans-serif;
+  
+    margin-left: 50px;
+    
+}
+
+.link2 {
+    margin-left: 50px;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+    
+}
+
+.para-6 {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    margin-top: 150px;
+    animation-name: fadein;
+    animation-duration: 12s;
+    
+}
+
+@keyframes fadein {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+
+.arrow {
+    margin-top: 40px;
+    border: solid rgb(255, 255, 255);
+    border-width: 0 3px 3px 0;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    padding: 3px;
+    
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+@keyframes bounce
+{
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-30px);}
+    60% {transform: translateY(-15px);}
+}
+
+.arrow-div
+{
+    
+    animation: bounce 3s infinite;
+
+}
+
+.main-message-div
+{
+    animation: fadein 6s;
+    
+}
+
+.scroll-container {
+  
+  padding-top: 15px;
+  font-size: 20px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+  font-weight: 600;
+}
+
+.scroll-text {
+  /* animation properties */
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  
+  -moz-animation: my-animation 8s linear infinite;
+  -webkit-animation: my-animation 8s linear infinite;
+  animation: my-animation 8s linear infinite;
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+  from { -moz-transform: translateX(100%); }
+  to { -moz-transform: translateX(-100%); }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from { -webkit-transform: translateX(100%); }
+  to { -webkit-transform: translateX(-100%); }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  to {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+
+.scroll-container2 {
+  
+  padding-top: 15px;
+  font-size: 20px;
+  color: white;
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+  font-weight: 600;
+}
